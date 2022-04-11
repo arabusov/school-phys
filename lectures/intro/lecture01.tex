@@ -1,0 +1,70 @@
+\documentclass[t,aspectratio=169]{beamer}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{graphicx}
+\usepackage{commath}
+\usepackage{tikz}
+\usepackage{tikz-feynman}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{arrows,automata,backgrounds,calendar,chains,matrix,mindmap,
+    patterns,petri,shadows,shapes.geometric,shapes.misc,spy,trees,calc}
+\usepackage{verbatim}
+\usepackage{listings}
+
+%%% Some definitions for math
+\usepackage{amsmath}
+\usepackage{bbm}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\usepackage{comment}
+\usepackage{url}
+\usepackage{mathtools}
+\usefonttheme[onlymath]{serif}
+\graphicspath{{./images/}}
+\title{Физика}
+\subtitle {Введение}
+\institute[TUM E18]{Technical University of Munich\\
+Department of Physics, E18}
+\author[\url{a.rabusov@tum.de}]{\texorpdfstring{Андрей Рабусов \newline\url{a.rabusov@tum.de}}{Андрей Рабусов}}
+
+\date{Апрель 11, 2022}
+
+
+\newcommand{\backupbegin}{
+\newcounter{finalframe}
+\setcounter{finalframe}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+\setcounter{framenumber}{\value{finalframe}}
+}
+\begin{document}
+\pdfinfo{
+/Author (Andrei Rabusov)
+/Title  (physics)
+/Subject (intro)
+}
+
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}{Содержание}
+\tableofcontents[sectionstyle=show,subsectionstyle=show]
+\end{frame}
+\input{tex/intro}
+\input{tex/subatom}
+\input{tex/mech}
+\input{tex/summary}
+\appendix
+\backupbegin
+\begin{frame}
+\frametitle{Приложение}
+\begin{figure}
+    \LARGE Backup
+\end{figure}
+\end{frame}
+%\input{tex/appendix}
+\backupend
+\end{document}
