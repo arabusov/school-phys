@@ -54,8 +54,8 @@ L2 = L1
 M1 = 1.0  # mass of the first particle (fixed on the X axis)
 M2 = 1.0  # mass of the second particle, the bottom end of the pendulum
 t_stop = 5  # how many seconds to simulate
-history_len = 2000  # how many trajectory points to display
-phi0 = -np.pi/2.
+history_len = 5000  # how many trajectory points to display
+phi0 = -np.pi/8.
 
 def nonlinear (phi, L):
     return -G*np.sin (phi)/L
@@ -67,11 +67,11 @@ def derivs(state, t):
     dydx[0] = state[1]
     # F = ma for the first particle
     dydx[1] = 0
-    dydx[1] = linear (state[0], L1)
+    dydx[1] = nonlinear (state[0], L1)
 
     dydx[2] = state[3]
 
-    dydx[3] = linear (state[2], L2)
+    dydx[3] = nonlinear (state[2], L2)
 
     return dydx
 

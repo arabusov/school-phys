@@ -48,7 +48,7 @@ import matplotlib.animation as animation
 from collections import deque
 
 G = 9.8  # acceleration due to gravity, in m/s^2
-L = 1.0
+L = 0.9
 M1 = 1.0  # mass of the first particle (fixed on the X axis)
 M2 = 1.0  # mass of the second particle, the bottom end of the pendulum
 t_stop = 5  # how many seconds to simulate
