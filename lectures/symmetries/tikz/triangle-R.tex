@@ -7,7 +7,8 @@
     \draw[thin] (x) -- (y);
     \draw[thin] (y) -- (z);
     \draw[thin] (z) -- (x);
-    \draw (x) node[anchor=north west]{$1$};
-    \draw (z) node[anchor=north east]{$3$};
+    \draw[dashdotted] (Y0) -- (Y1);
+    \draw (x) node[anchor=north west]{$3$};
+    \draw (z) node[anchor=north east]{$1$};
     \draw (y) node[anchor=south]{$2$};
 \end{tikzpicture}

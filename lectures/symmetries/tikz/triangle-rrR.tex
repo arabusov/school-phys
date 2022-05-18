@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+    \coordinate (y) at (0.87, -0.5);
+    \coordinate (z) at (0.00, 1.00);
+    \coordinate (x) at (-0.87, -0.5);
+    \coordinate (Y0) at (0.00, 1.15);
+    \coordinate (Y1) at (0.00, -1.15);
+    \draw[thin] (x) -- (y);
+    \draw[thin] (y) -- (z);
+    \draw[thin] (z) -- (x);
+    \draw[thin,->] (0,0.3) arc (90:360:0.3);
+    \draw[dashdotted] (Y0) -- (Y1);
+    \draw (x) node[anchor=north east]{$2$};
+    \draw (z) node[anchor=south]{$3$};
+    \draw (y) node[anchor=north west]{$1$};
+\end{tikzpicture}

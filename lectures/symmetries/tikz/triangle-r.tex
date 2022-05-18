@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+    \coordinate (y) at (0.87, -0.5);
+    \coordinate (x) at (0.00, 1.00);
+    \coordinate (z) at (-0.87, -0.5);
+    \draw[thin] (x) -- (y);
+    \draw[thin] (y) -- (z);
+    \draw[thin] (z) -- (x);
+    \draw[thin,->] (0,0.3) arc (90:210:0.3);
+    \draw (x) node[anchor=south]{$1$};
+    \draw (y) node[anchor=north west]{$3$};
+    \draw (z) node[anchor=north east]{$2$};
+\end{tikzpicture}

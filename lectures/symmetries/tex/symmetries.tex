@@ -1,26 +1,209 @@
 \section{Симметрии}
-\begin{frame}{Физика частиц: содержание}
+\begin{frame}{Содержание}
     \tableofcontents[currentsection, subsectionstyle=show/show/hide]
 \end{frame}
 \subsection{Дискретные симметрии}
 \begin{frame}
     \frametitle{Симметрия треугольника}
     \begin{columns}
-        \begin{column}{0.3\textwidth}
+        \begin{column}{0.33\textwidth}
             \begin{figure}[H]
                 \begin{centering}
                     \input{tikz/triangle}
                 \end{centering}
             \end{figure}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-R}
+                \end{centering}
+            \end{figure}
         \end{column}
-        \begin{column}{0.3\textwidth}
+        \begin{column}{0.33\textwidth}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-r}
+                \end{centering}
+            \end{figure}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-rR}
+                \end{centering}
+            \end{figure}
         \end{column}
-        \begin{column}{0.3\textwidth}
+        \begin{column}{0.33\textwidth}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-rr}
+                \end{centering}
+            \end{figure}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-rrR}
+                \end{centering}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Перестановки}
+    \begin{columns}
+        \begin{column}{0.33\textwidth}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    1 & 2 & 3
+                \end{array}\right)
+            \end{equation*}
+            \par\vspace{0.3cm}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    3 & 2 & 1
+                \end{array}\right)
+            \end{equation*}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    3 & 1 & 2 
+                \end{array}\right)
+            \end{equation*}
+            \par\vspace{0.3cm}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    2 & 1 & 3
+                \end{array}\right)
+            \end{equation*}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    2 & 3 & 1 
+                \end{array}\right)
+            \end{equation*}
+            \par\vspace{0.3cm}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    1 & 3 & 2 
+                \end{array}\right)
+            \end{equation*}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \begin{columns}
+        \begin{column}{0.33\textwidth}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    1 & 2 & 3
+                \end{array}\right)
+            \end{equation*}
+            \vspace{-0.5cm}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle}
+                \end{centering}
+            \end{figure}
+            \vspace{-0.2cm}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    3 & 2 & 1
+                \end{array}\right)
+            \end{equation*}
+            \vspace{-0.5cm}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-R}
+                \end{centering}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    3 & 1 & 2 
+                \end{array}\right)
+            \end{equation*}
+            \vspace{-0.5cm}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-r}
+                \end{centering}
+            \end{figure}
+            \vspace{-0.2cm}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    2 & 1 & 3
+                \end{array}\right)
+            \end{equation*}
+            \vspace{-0.5cm}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-rR}
+                \end{centering}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.33\textwidth}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    2 & 3 & 1 
+                \end{array}\right)
+            \end{equation*}
+            \vspace{-0.5cm}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-rr}
+                \end{centering}
+            \end{figure}
+            \vspace{-0.2cm}
+            \begin{equation*}
+                \left(\begin{array}{ccc}
+                    1 & 2 & 3 \\
+                    1 & 3 & 2 
+                \end{array}\right)
+            \end{equation*}
+            \vspace{-0.5cm}
+            \begin{figure}[H]
+                \begin{centering}
+                    \input{tikz/triangle-rrR}
+                \end{centering}
+            \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
 \subsection{Непрерывные симметрии}
+\begin{frame}
+    \frametitle{Тела вращения}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \begin{centering}
+                    \includegraphics[width=0.99\textwidth]{sphere}
+                \end{centering}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \begin{centering}
+                    \includegraphics[width=0.5\textwidth]{cylinder}
+                \end{centering}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\subsection{Симметрии в физике}
 \begin{frame}
     \frametitle{Стандартная модель ФЭЧ}
     \begin{figure}
