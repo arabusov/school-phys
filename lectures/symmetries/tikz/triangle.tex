@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+    \coordinate (x) at (0.87, -0.5);
+    \coordinate (y) at (0.00, 1.00);
+    \coordinate (z) at (-0.87, -0.5);
+    \draw[thin] (x) -- (y);
+    \draw[thin] (y) -- (z);
+    \draw[thin] (z) -- (x);
+    \draw (x) node[anchor=north west]{$1$};
+    \draw (z) node[anchor=north east]{$3$};
+    \draw (y) node[anchor=south]{$2$};
+\end{tikzpicture}
