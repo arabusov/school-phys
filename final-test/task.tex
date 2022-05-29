@@ -1,0 +1,57 @@
+\maketitle
+\par{\bf Задача 1}\par
+Два бруска без трения расположены как на рисунке. Внешний брусок с массой
+$m_2$ толкают в
+сторону внутреннего бруска, масса которого $m_1$.
+\begin{figure}[h!]
+    \begin{centering}
+\begin{tikzpicture}
+  \def\H{1}    % wall height
+  \def\T{0.3}  % wall thickness
+  \def\W{6}  % ground length
+  \def\D{0.25} % ground depth
+  \def\h{0.6}  % mass height
+  \def\w{0.7}  % mass width
+  \def\x{1.6}  % mass x position
+  \def\y{4.2}  % mass y position
+  \def\dx{0.8} % extension
+  \def\F{0.8}  % force
+  \draw[ground] (0,0) |-++ (-\T,\H) |-++ (\T+\W,-\H-\D) -- (\W,0) -- cycle;
+  \draw (0,\H) -- (0,0) -- (\W,0);
+  \draw[mass] (\x,0) rectangle++ (\w,\h) node[midway] {$m_1$};
+  \draw[mass] (\y,0) rectangle++ (\w,\h) node[midway] {$m_2$};
+  \draw[force] (\y,0.5*\h) --++ (-\F,0)
+    node[midway,right=1,above=-1] {$\vb{v}$};
+\end{tikzpicture}
+    \end{centering}
+\end{figure}
+Сколько всего будет соударений между брусками, а так
+же между внутренним бруском и стеной, если
+\begin{enumerate}
+    \item $m_1 = m_2$?
+    \item $m_1 = 1/10 m_2$?
+\end{enumerate}
+
+\par{\bf Задача 2}\par
+Скучающий космонавт играет на компьютере с тактовой частотой процессора 1
+ГГц.  Чему равна частота этого процессора с точки зрения наблюдателя с
+Земли, если корабль движется со скоростью $4/5$ скорости света относительно
+Земли?
+\par{\bf Задача 3}\par
+В Стандартной модели физики частиц может ли
+\begin{enumerate}
+    \item при распаде $\text{b}$-кварка возникнуть $\text{t}$-кварк?
+    \item при распаде нейтрона возникнуть мюонное нейтрино?
+\end{enumerate}
+\par{\bf Задача 4}\par
+Найдите значение выражения
+\begin{equation*}
+\sin 11^\circ + \sin 83^\circ + \sin 155^\circ + \sin 227^\circ +
+    \sin 299^\circ
+\end{equation*}
+
+\begin{centering}
+    {\it
+    Задача не считается решённой, если приведён только ответ
+    }
+\end{centering}

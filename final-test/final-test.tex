@@ -1,0 +1,82 @@
+\documentclass[10,a5paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+%koi8-r]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[top=0.5cm,bottom=0.5cm]{geometry}
+
+% \usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks=true, linkcolor=Maroon]{hyperref}
+\pagestyle{empty}
+
+
+\newcommand*{\mc}{}
+\def\mc#1#{\mathcoloraux{#1}}
+\newcommand*{\mathcoloraux}[3]{%
+  \protect\leavevmode
+  \begingroup
+    \color#1{#2}#3%
+  \endgroup
+}
+
+\usepackage{wrapfig}
+
+
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage[outline]{contour} % glow around text
+\usetikzlibrary{patterns,snakes}
+\usetikzlibrary{arrows.meta} % for arrow size
+\contourlength{0.4pt}
+
+\colorlet{xcol}{blue!70!black}
+\colorlet{darkblue}{blue!40!black}
+\colorlet{myred}{red!65!black}
+\tikzstyle{mydashed}=[xcol,dashed,line width=0.25,dash pattern=on 2.2pt off 2.2pt]
+\tikzstyle{axis}=[->,thick] %line width=0.6
+\tikzstyle{ell}=[{Latex[length=3.3,width=2.2]}-{Latex[length=3.3,width=2.2]},line width=0.3]
+\tikzstyle{dx}=[-{Latex[length=3.3,width=2.2]},darkblue,line width=0.3]
+\tikzstyle{ground}=[preaction={fill,top color=black!10,bottom color=black!5,shading angle=20},
+                    fill,pattern=north east lines,draw=none,minimum width=0.3,minimum height=0.6]
+\tikzstyle{mass}=[line width=0.6,red!30!black,fill=red!40!black!10,rounded corners=1,
+                  top color=red!40!black!20,bottom color=red!40!black!10,shading angle=20]
+\tikzstyle{spring}=[line width=0.8,blue!7!black!80,snake=coil,segment amplitude=5,segment length=5,line cap=round]
+\tikzset{>=latex} % for LaTeX arrow head
+\tikzstyle{force}=[->,myred,very thick,line cap=round]
+\def\tick#1#2{\draw[thick] (#1)++(#2:0.1) --++ (#2-180:0.2)}
+
+\usepackage{textcomp}
+
+\usepackage{comment}
+\newcommand{\fref}[1]{Рис.~\ref{#1}}
+\newcommand{\tref}[1]{Таб.~\ref{#1}}
+\newcommand{\eref}[1]{(\ref{#1})}
+
+
+
+\renewcommand{\labelenumii}{\arabic{enumii}.}
+
+\usepackage{listings}
+
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+
+
+
+\setcounter{secnumdepth}{6}
+\setcounter{tocdepth}{4}
+
+\title{Экзамен по физике}
+\author{Составитель: Андрей Рабусов (\url{a.rabusov@tum.de})}
+\date{30 мая 2022 г.}
+
+\begin{document}
+\input{task}
+\newpage
+\input{task}
+\end{document}
