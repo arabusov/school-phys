@@ -110,7 +110,7 @@ y = np.zeros ((np.size (t), np.size(state)))
 y[0] = state
 for i, titem in enumerate (t):
     if i > 0:
-        y[i] = derivs (y [i-1], titem)
+        y[i] = derivs (y [i-1], titem)*dt + y [i-1]
 
 # Unpack results
 x1 = y[:, 0]
@@ -139,7 +139,6 @@ def circle (x, y, r):
 def animate(i):
     thisx1, thisy1 = circle (x1[i], y1[i], R) 
     thisx2, thisy2 = circle (x2[i], y2[i], R) 
-    print (x1[i], y1 [i])
 
     line1.set_data(thisx1, thisy1)
     line2.set_data(thisx2, thisy2)
@@ -149,5 +148,5 @@ def animate(i):
 
 
 ani = animation.FuncAnimation(
-    fig, animate, len(y), interval=dt*10000, blit=True)
+    fig, animate, len(y), interval=dt*1000, blit=True)
 plt.show()
